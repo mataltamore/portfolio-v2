@@ -1,0 +1,40 @@
+{
+  "experience": [
+    {
+      "range": "may 2021 - present",
+      "name": "Deloitte Digital",
+      "description": "Website developed with React and modern CSS. The primary feature has been the components' dynamic render (JSON files structured). This allows the client to create, show, order, duplicate and customize all of the components inside a specific web page. Atomic design and TDD approach by cypress and storybook. Designed and developed a RESTful API middleware with Node.js (Nest.js framework) and TDD approach through jest. Developed a mobile-first full responsive customers website, supplies and bills global filter system, dashboard, and form handling for other external microservices."
+    },
+    {
+      "range": "june 2015 - aug 2015",
+      "name": "Beta80 Group",
+      "description": "Developed a Java8 swing application with a music database and user authentication. Developed a small friendship and interaction system between users."
+    },
+    {
+      "range": "june 2014 - aug 2014",
+      "name": "Nyx Solutions",
+      "description": "Assisted and developed client's Wordpress website with forms and newsletter subscriptions."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Multiple Cards Website",
+      "description": "Built a responsive and mobile-first website with React and Modern CSS, which dynamically renders more than 500 cards inside the homepage, by matching different fields inside different JSON files. The data model has been provided by a free and open source REST API called PokeAPIv2.",
+      "site": {
+        "name": "Github",
+        "link": "https://github.com/mataltamore/pokedex-site"
+      }
+    },
+    {
+      "name": "NIST Lightweight Cryptography Competition",
+      "description": "Learned and showed the elephant cipher, its vulnerabilities and the most effective attacks. Made one of the most common attacks with python."
+    }
+  ],
+  "education": [
+    {
+      "range": "sept 2016 - apr 2021",
+      "name": "Univerity of Milan",
+      "description": "Bachelor's Degree in Computer Science. My favorite courses were Algorithms and Data Structures, Databases, Software Engineer and Design Patterns, Cryptography"
+    }
+  ]
+}
