@@ -1,0 +1,47 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  margin: unset unset 3rem unset;
+
+  &__subtitle {
+    margin: 1rem unset;
+    color: $c-link;
+  }
+
+  &__body {
+    margin: 1rem unset;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 0.875rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-top: 1rem;
+
+  & > img {
+    width: 21px;
+    height: 21px;
+  }
+}

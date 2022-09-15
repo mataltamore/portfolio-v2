@@ -1,12 +1,17 @@
 import "./App.scss";
 import DarkLightThemeButton from "../DarkLightThemeButton/DarkLightThemeButton";
+import About from "../About/About";
+import Sidebar from "../Sidebar/Sidebar";
 
 function App() {
   return (
-    <div>
-      Hello World
+    <>
       <DarkLightThemeButton />
-    </div>
+      <div className="layout">
+        <About />
+        <Sidebar />
+      </div>
+    </>
   );
 }
 
