@@ -1,5 +1,5 @@
 import "./Sidebar.scss";
-import CV from "../../../public/json/cv.json";
+import CV from "../../content/api/cv.json";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { SidebarButtonProps, SidebarCardProps } from "../../types/Sidebar";
 

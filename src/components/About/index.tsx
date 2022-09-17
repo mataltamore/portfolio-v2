@@ -1,7 +1,7 @@
 import "./About.scss";
-import CV from "../../../public/content/Matteo_Altamore_CV_eng.pdf";
-import SOCIAL from "../../../public/json/social.json";
-import ABOUT from "../../../public/json/about.json";
+import CV from "../../content/Matteo_Altamore_CV_eng.pdf";
+import SOCIAL from "../../content/api/social.json";
+import ABOUT from "../../content/api/about.json";
 import { ExternalLinkIcon, DownloadIcon } from "@chakra-ui/icons";
 import { SocialButtonProps } from "../../types/About";
 
