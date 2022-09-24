@@ -5,38 +5,65 @@ import ABOUT from "../../content/api/about.json";
 import { ExternalLinkIcon, DownloadIcon } from "@chakra-ui/icons";
 import { SocialButtonProps } from "../../types/About";
 import DarkLightThemeButton from "../DarkLightThemeButton";
+import { Button, Heading, Link, Text } from "@chakra-ui/react";
+
+const COLOR = {
+  PURPLE: "rgb(148, 0, 255)",
+};
 
 function About() {
   return (
     <section className="about">
-      <h1>{ABOUT.title}</h1>
+      <div className="about__heading-wrapper">
+        <Heading fontSize={75} lineHeight={1} as="h1">
+          {ABOUT.title}
+        </Heading>
 
-      <h2 className="about__subtitle">{ABOUT.subtitle}</h2>
-      <p className="about__body">{ABOUT.body}</p>
+        <Heading fontSize={40} lineHeight={1} as="h2" color={COLOR.PURPLE}>
+          {ABOUT.subtitle}
+        </Heading>
 
-      <div className="social">
-        {SOCIAL.map((item) => (
-          <SocialButton key={item.label} {...item} />
-        ))}
+        <Text fontSize={19} lineHeight={6}>
+          {ABOUT.body}
+        </Text>
       </div>
 
-      <a href={CV} download className="resume">
-        {ABOUT.cvText}
-        <DownloadIcon />
-      </a>
+      <div className="about__action-wrapper">
+        <div className="social">
+          {SOCIAL.map((item) => (
+            <SocialButton key={item.label} {...item} />
+          ))}
+        </div>
 
-      <DarkLightThemeButton />
+        <Button
+          variant="solid"
+          aria-label="Download CV"
+          rightIcon={<DownloadIcon />}
+        >
+          <a href={CV} download className="resume">
+            {ABOUT.cvText}
+          </a>
+        </Button>
+
+        <DarkLightThemeButton />
+      </div>
     </section>
   );
 }
 
 function SocialButton(props: SocialButtonProps) {
   const { label, href } = props;
+
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="social__link">
-      {label}
-      <ExternalLinkIcon className="social__link__icon" />
-    </a>
+    <Link href={href} isExternal>
+      <Button
+        variant="solid"
+        aria-label={label}
+        rightIcon={<ExternalLinkIcon />}
+      >
+        {label}
+      </Button>
+    </Link>
   );
 }
 
