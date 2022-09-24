@@ -6,10 +6,7 @@ import { ExternalLinkIcon, DownloadIcon } from "@chakra-ui/icons";
 import { SocialButtonProps } from "../../types/About";
 import DarkLightThemeButton from "../DarkLightThemeButton";
 import { Button, Heading, Link, Text } from "@chakra-ui/react";
-
-const COLOR = {
-  PURPLE: "rgb(148, 0, 255)",
-};
+import COLORS from "../../style/COLORS";
 
 function About() {
   return (
@@ -19,7 +16,7 @@ function About() {
           {ABOUT.title}
         </Heading>
 
-        <Heading fontSize={40} lineHeight={1} as="h2" color={COLOR.PURPLE}>
+        <Heading fontSize={40} lineHeight={1} as="h2" color={COLORS.PURPLE}>
           {ABOUT.subtitle}
         </Heading>
 
