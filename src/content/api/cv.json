@@ -18,8 +18,16 @@
   ],
   "projects": [
     {
-      "name": "Multiple Cards Website",
-      "description": "Built a responsive and mobile-first website with React and Modern CSS, which dynamically renders more than 500 cards inside the homepage, by matching different fields inside different JSON files. The data model has been provided by a free and open source REST API called PokeAPIv2.",
+      "name": "Studio Ghibli's Website",
+      "description": "In this project I've used styled components with react. Also, I tried to develop a better version of the Studio Ghibli's Italian Website/Blog. It isn't over yet and there isn't a mobile version.",
+      "site": {
+        "name": "Github",
+        "link": "https://github.com/mataltamore/ghibli-studios"
+      }
+    },
+    {
+      "name": "Simple Pokemon Cards Website",
+      "description": "Built a responsive and mobile-first website with React and Modern CSS, which dynamically renders more than 500 cards inside the homepage, by matching different fields inside different JSON files. The data model has been provided by a free and open source REST API called PokeAPIv2. I've developed this project with my university collegue, to introduce her to the react library.",
       "site": {
         "name": "Github",
         "link": "https://github.com/mataltamore/pokedex-site"
