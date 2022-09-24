@@ -4,6 +4,7 @@ import SOCIAL from "../../content/api/social.json";
 import ABOUT from "../../content/api/about.json";
 import { ExternalLinkIcon, DownloadIcon } from "@chakra-ui/icons";
 import { SocialButtonProps } from "../../types/About";
+import DarkLightThemeButton from "../DarkLightThemeButton";
 
 function About() {
   return (
@@ -23,6 +24,8 @@ function About() {
         {ABOUT.cvText}
         <DownloadIcon />
       </a>
+
+      <DarkLightThemeButton />
     </section>
   );
 }
